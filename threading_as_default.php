@@ -74,7 +74,6 @@ EOF;
 			$prefs[$args['record']['name']] = 0;
 			$rcmail->user->save_prefs(array('thread_override' => $prefs));
 		}
-		print_r($prefs);
 		return $args;
 	}
 	function default_override($args) {
