@@ -9,6 +9,8 @@
  *    folder. Use tihs to rebuild the message_threading setting.
  *
  * Notes:
+ *  - Does not respect setting "list" view mode from drop-down in list view in
+ *    the long run.
  *  - Does not clean the settings when you delete folders
  *  - Uses "." as delimiter for folders.
  *  - Not properly tested. Yet.
