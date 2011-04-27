@@ -12,7 +12,6 @@
  *  - Does not respect setting "list" view mode from drop-down in list view in
  *    the long run.
  *  - Does not clean the settings when you delete folders
- *  - Uses "." as delimiter for folders.
  *  - Not properly tested. Yet.
  *
  * @version 0.8
@@ -47,7 +46,7 @@ class threading_as_default extends rcube_plugin
 			if ($path == '') {
 				$folder = '';
 			} else {
-				$folder = $path . '.';
+				$folder = $path . $rcmail->imap->get_hierarchy_delimiter();
 			}
 			$path = $args['form']['props']['fieldsets']['location']['content']['name']['value'];
 			$path = preg_replace('/.*value="([^"]*)".*/', "$1", $path);
