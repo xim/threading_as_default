@@ -8,10 +8,12 @@
  *    preferences and see if the user has overridden the view mode for any
  *    folder. Use tihs to rebuild the message_threading setting.
  *
- * Notes:
- *  - Does not respect setting "list" view mode from drop-down in list view in
- *    the long run.
- *  - Does not clean the settings when you delete folders
+ * TODO/Notes:
+ *  - Does not respect setting "list" view mode from drop-down in the mailbox.
+ *  - Does not clean the settings over the long run. (i.e. may accumulate a few
+ *    bytes of settings data if run over a long time with many, frequently
+ *    changing mailboxes)
+ *  - Might be run the preferences update more frequently than needed.
  *  - Not properly tested. Yet.
  *
  * @version 0.8
