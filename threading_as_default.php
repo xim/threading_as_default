@@ -1,11 +1,12 @@
 <?php
 
 /**
- * In here there be hacks.
- *
- * Every time we are rendering the list of mailboxes, get the user preferences
- * and see if the user has an override set for this folder. Make sure we
- * respect someone overriding the setting.
+ * In here there be hacks. We do three things:
+ *  - If someone sets list view, save this in our settings.
+ *  - For new folders, select "Threads" as default
+ *  - Every time we are rendering the list of mailboxes, get the user
+ *    preferences and see if the user has overridden the view mode for any
+ *    folder. Use tihs to rebuild the message_threading setting.
  *
  * Notes:
  *  - Does not clean the settings when you delete folders
