@@ -16,7 +16,7 @@
  *  - Might be run the preferences update more frequently than needed.
  *  - Not properly tested. Yet.
  *
- * @version 0.8
+ * @version 0.9
  * @author Morten Minde Neergaard
  */
 
